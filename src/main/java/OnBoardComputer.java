@@ -14,7 +14,7 @@ public class OnBoardComputer implements BurnStream {
                 if(alt < 155 && vel <150){
                     if(alt < 100 && vel < 50){
                         if(alt < 25 && vel < 25){
-                            if(alt < 10 && vel < 10){
+                            if(alt < 15 && vel < 10){
                                 System.out.println(burn); /*hack!*/
                                 return targetVelocity(status.getVelocity(),2);
                             }
