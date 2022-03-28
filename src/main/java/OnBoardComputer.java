@@ -11,8 +11,8 @@ public class OnBoardComputer implements BurnStream {
         boolean done = false;
 
         while(!done){
-                if(alt < 150 && vel <100){
-                    if(alt < 50 && vel < 50){
+                if(alt < 155 && vel <150){
+                    if(alt < 100 && vel < 50){
                         if(alt < 25 && vel < 25){
                             if(alt < 10 && vel < 10){
                                 System.out.println(burn); /*hack!*/
