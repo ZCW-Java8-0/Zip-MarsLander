@@ -11,19 +11,25 @@ public class OnBoardComputer implements BurnStream {
         boolean done = false;
 
         while(!done){
-                if(alt < 155 && vel <150){
-                    if(alt < 100 && vel < 50){
-                        if(alt < 25 && vel < 25){
+                if(alt < 400 && vel <200){
+                    if(alt < 200 && vel < 50){
+                        if(alt < 100 && vel < 25){
                             if(alt < 15 && vel < 10){
+                                burn = targetVelocity(status.getVelocity(),2);
                                 System.out.println(burn); /*hack!*/
-                                return targetVelocity(status.getVelocity(),2);
+                                return burn;
                             }
+                            burn = targetVelocity(status.getVelocity(), 9);
+                            System.out.println(burn); /*hack!*/
+                            return burn;
                         }
+                        burn = targetVelocity(status.getVelocity(), 24);
                         System.out.println(burn); /*hack!*/
-                        return targetVelocity(status.getVelocity(), 9);
+                        return burn;
                     }
+                    burn = targetVelocity(status.getVelocity(), 49);;
                     System.out.println(burn); /*hack!*/
-                return targetVelocity(status.getVelocity(), 49);
+                return burn;
                 }
 
                 if(burn == 200){
