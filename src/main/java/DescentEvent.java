@@ -1,4 +1,4 @@
-public class DescentEvent {
+public class  DescentEvent {
     int Seconds = 0;
     int Velocity = 0;
     int Fuel = 0;
@@ -10,6 +10,7 @@ public class DescentEvent {
         this.Velocity = sp;
         this.Fuel = f;
         this.Altitude = h;
+        this.Status = st;
     }
 
     public int getVelocity() {
